@@ -25,8 +25,8 @@ public class Main {
 			int num = NumberFormatChecker.toInteger(input);
 
 			//count
-			int result = Counter2.count(num, 7);
-
+			int result = new Counter2().count(num, 7);
+			
 			//output
 			System.out.print("output value:");
 			write(result);
