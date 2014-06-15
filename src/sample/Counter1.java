@@ -2,13 +2,13 @@ package sample;
 
 public class Counter1 implements Counter{
 
-	public long count(int input, int checkNum){
+	public long countTergetNumInInput(int input, int tergetNum){
 		StringBuilder sb = new StringBuilder();
 		for(int i = 1; i<=input; i++){
 			sb.append(i);
 		}
-		int total = sb.toString().length();
-		int reduce = sb.toString().replace(String.valueOf(checkNum), "").length();
-		return total - reduce;
+		int totalLength = sb.toString().length();
+		int reduceLength = sb.toString().replace(String.valueOf(tergetNum), "").length();
+		return totalLength - reduceLength;
 	}
 }

@@ -1,12 +1,12 @@
 package sample;
 
-public class Number {
+public class FigureNumber {
 	private final int figure;
 	private final int number;
 	
-	public Number(int figure, int number) {
+	public FigureNumber(int figure, int number) {
 		super();
-		assert(number%10 == 0);
+		assert(figure%10 == 0);
 		this.figure = figure;
 		
 		assert(number/10 == 0);

@@ -2,5 +2,5 @@ package sample;
 
 public interface Counter {
 
-	public long count(int input, int checkNum);
+	public long countTergetNumInInput(int input, int tergetNum);
 }
