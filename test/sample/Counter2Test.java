@@ -53,7 +53,7 @@ public class Counter2Test {
 	@Test
 	public void test6() {
 		assertThat(counter.count(99, 7), is(20l));
-		assertThat(counter.count(77777, 7), is(7*4000 + 7*300 + 7*20 + 7*1+ 7778 + 778 + 78 +8 + 1l));
+		assertThat(counter.count(77777, 7), is(38890l));
 		assertThat(counter.count(23678947, 7), is(16140633l));
 		assertThat(counter.count(732465890, 7), is(614891670l));
 		assertThat(counter.count(1912478368, 7), is(2728439836l));
