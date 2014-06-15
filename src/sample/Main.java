@@ -8,15 +8,10 @@ public class Main {
 	public static void main(String[] args) {
 		BufferedReader stdReader = new BufferedReader(new InputStreamReader(System.in));
 		try {
-			while (true) {
-				String input = stdReader.readLine();
-				if(input == null || input.equals("")){
-					break;// terminate application
-				}
-				execute(input);
-			}
+			String input = stdReader.readLine();
+			execute(input);
 		} catch (Exception e) {
-			System.out.println("何かエラーがおきました。ログを確認してください");
+			System.out.println("some error happend. check logs");
 			e.printStackTrace();
 		}
 	}
@@ -25,26 +20,25 @@ public class Main {
 		final long startTime = System.currentTimeMillis();
 		try{
 			//convert
-			System.out.print("入力値");
+			System.out.print("input value:");
 			System.out.println(input);
 			int num = NumberFormatChecker.toInteger(input);
 
 			//count
-			Counter counter = new Counter();
-			int result = counter.count(num);
+			int result = Counter2.count(num, 7);
 
 			//output
-			System.out.print("出力値");
+			System.out.print("output value:");
 			write(result);
 		}catch(NumberFormatException e){
 			//continue
 			e.printStackTrace();
 		}
 		final long endTime = System.currentTimeMillis();
-		System.out.println(endTime - startTime + "ms かかりました。");
+		System.out.println(endTime - startTime + "ms done.");
 	}
-	
+
 	private static void write(int num) {
-				System.out.println(num);
+		System.out.println(num);
 	}
 }
