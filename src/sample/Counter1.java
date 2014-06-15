@@ -2,7 +2,7 @@ package sample;
 
 public class Counter1 implements Counter{
 
-	public int count(int input, int checkNum){
+	public long count(int input, int checkNum){
 		StringBuilder sb = new StringBuilder();
 		for(int i = 1; i<=input; i++){
 			sb.append(i);

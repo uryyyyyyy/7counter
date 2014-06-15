@@ -25,7 +25,7 @@ public class Main {
 			int num = NumberFormatChecker.toInteger(input);
 
 			//count
-			int result = new Counter2().count(num, 7);
+			long result = new Counter2().count(num, 7);
 			
 			//output
 			System.out.print("output value:");
@@ -38,7 +38,7 @@ public class Main {
 		System.out.println(endTime - startTime + "ms done.");
 	}
 
-	private static void write(int num) {
+	private static void write(long num) {
 		System.out.println(num);
 	}
 }

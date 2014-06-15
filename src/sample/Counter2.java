@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Counter2 implements Counter{
 
-	public int count(int input,  int checkNum){
-		int result = 0;
+	public long count(int input,  int checkNum){
+		long result = 0;
 		List<Number> list = createNumber(input);
 		for(Number number: list){
 			result += count_(input, checkNum, number);
@@ -31,7 +31,7 @@ public class Counter2 implements Counter{
 		return result;
 	}
 
-	private int count_(int input, int checkNum, Number number) {
+	private long count_(int input, int checkNum, Number number) {
 		if(number.getNumber() > checkNum){
 			return (input/(number.getFigure()*10) + 1)  * number.getFigure();
 		}else if(number.getNumber() < checkNum){
