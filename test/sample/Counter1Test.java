@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class Counter1Test {
 
-	static Counter1 counter = new Counter1();
+	static TargetNumberCounterImpl1 counter = new TargetNumberCounterImpl1();
 
 	@Test
 	public void test() {

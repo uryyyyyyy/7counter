@@ -3,7 +3,7 @@ package sample;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Counter2 implements Counter{
+public class TargetNumberCounterImpl2 implements TargetNumberCounter{
 
 	public long countTargetNumInInput(int input,  int tergetNum){
 		long result = 0;

@@ -1,6 +1,6 @@
 package sample;
 
-public class Counter1 implements Counter{
+public class TargetNumberCounterImpl1 implements TargetNumberCounter{
 
 	public long countTargetNumInInput(int input, int tergetNum){
 		StringBuilder sb = new StringBuilder();

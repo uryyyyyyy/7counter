@@ -1,6 +1,6 @@
 package sample;
 
-public interface Counter {
+public interface TargetNumberCounter {
 
 	public long countTargetNumInInput(int input, int tergetNum);
 }

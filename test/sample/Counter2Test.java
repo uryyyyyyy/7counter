@@ -8,15 +8,15 @@ import org.junit.Test;
 
 public class Counter2Test {
 
-	static Counter2 counter = new Counter2();
+	static TargetNumberCounterImpl2 counter = new TargetNumberCounterImpl2();
 
 	@Test
 	public void test() {
 		assertThat(counter.countTargetNumInInput(10, 7), is(1l));
-		assertThat(counter.countTargetNumInInput(20, 7), is(2));
-		assertThat(counter.countTargetNumInInput(70, 7), is(8));
-		assertThat(counter.countTargetNumInInput(80, 7), is(18));
-		assertThat(counter.countTargetNumInInput(90, 7), is(19));
+		assertThat(counter.countTargetNumInInput(20, 7), is(2L));
+		assertThat(counter.countTargetNumInInput(70, 7), is(8L));
+		assertThat(counter.countTargetNumInInput(80, 7), is(18L));
+		assertThat(counter.countTargetNumInInput(90, 7), is(19L));
 	}
 
 	@Test

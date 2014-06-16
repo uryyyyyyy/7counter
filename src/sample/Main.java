@@ -22,16 +22,17 @@ public class Main {
 			//convert
 			System.out.print("input value:");
 			System.out.println(input);
-			int num = NumberFormatChecker.toInteger(input);
+			final int num = Integer.valueOf(input);
+			
+			TargetNumberCounter counter = new TargetNumberCounterFactory().createTargetNumberCounter();
 
 			//count
-			long result = new Counter2().countTargetNumInInput(num, 7);
+			final long result = counter.countTargetNumInInput(num, 7);
 			
 			//output
 			System.out.print("output value:");
 			write(result);
 		}catch(NumberFormatException e){
-			//continue
 			e.printStackTrace();
 		}
 		final long endTime = System.currentTimeMillis();
